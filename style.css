@@ -139,16 +139,18 @@
 /* feature section starts here */
 .features {
   background: #111111;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-evenly;
-  padding-block: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* align-items: start; */
+  justify-content: center;
+  padding-block: 40px;
 }
+
 .feature-card {
   background: #2f2f2f;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
   margin-inline: 10px;
   padding: 25px 40px;
 }
@@ -168,10 +170,17 @@
   font-family: "Merriweather", serif;
   font-weight: 300;
   padding-block: 10px;
+  font-size: 0.8rem;
 }
 @media (max-width: 1200px) {
   .hero-image img {
     width: 400px;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .feature-card {
   }
 }
 
@@ -184,6 +193,7 @@
   .navlinks {
     justify-content: right;
   }
+  /* hero section */
   .responsive-navbar {
     display: flex;
     font-size: 1.25rem;
@@ -197,27 +207,29 @@
   .hero-content p {
     font-size: 1rem;
   }
+
+  /* feature section */
 }
 @media (max-width: 750px) {
   /* hero */
   .hero {
     flex-wrap: wrap;
+    height: max-content;
   }
-  .hero-image {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .hero-image img {
     width: 100%;
   }
   .hero-content {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  /* feature section */
+  .features {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
