@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  padding: 20px 6%;
+}
+
+.btn {
+  background-color: #6a9739;
+  color: white;
+  border-style: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.btn:hover {
+  background-color: #8bc34a;
+}
+/* navbar starts here */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-block: 15px;
+  padding-inline: 25px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
+}
+.navbar .logo img {
+  width: 150px;
+}
+.navlinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-navbar,
+.right-navbar,
+.responsive-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.left-navbar li a,
+.right-navbar li a,
+.responsive-navbar li a {
+  margin-left: 43px;
+  color: #454342;
+  transition: all ease 0.5s;
+  position: relative;
+}
+
+.left-navbar li a:hover,
+.right-navbar li a:hover,
+.responsive-navbar li a:hover,
+.left-navbar li a.active,
+.right-navbar li a.active,
+.responsive-navbar li a.active {
+  color: #8bc34a;
+}
+
+.left-navbar li a::after,
+.right-navbar li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #8bc34a;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: all ease 0.6s;
+}
+.left-navbar li a:hover::after,
+.right-navbar li a:hover::after {
+  width: 100%;
+}
+.fa-user {
+  font-size: 1.25rem;
+}
+.responsive-navbar {
+  display: none;
+}
+
+/* navbar ends here */
+
+/* hero section starts here */
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(images/background-overlay.png),
+    linear-gradient(to right, #ffffff, #f6f4f1);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 400px;
+  opacity: 0.3;
+}
+
+.hero-content h1 {
+  font-family: "Merriweather", serif;
+  font-size: 3.5rem;
+}
+.hero-content h4,
+.hero-content h1,
+.hero-content p,
+.hero-content .headline-image,
+.hero-content .btn {
+  margin-block: 20px;
+}
+.hero-content p {
+  color: #454342;
+}
+
+/* hero section ends here */
+
+/* feature section starts here */
+.features {
+  background: #111111;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding-block: 50px;
+}
+.feature-card {
+  background: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 10px;
+  padding: 25px 40px;
+}
+.feature-img i {
+  color: #8bc34a;
+  font-size: 1.4rem;
+}
+.feature-text {
+  color: white;
+}
+.feature-text h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+.feature-text h4 {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  padding-block: 10px;
+}
+@media (max-width: 1200px) {
+  .hero-image img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* navbar */
+  .left-navbar,
+  .right-navbar {
+    display: none;
+  }
+  .navlinks {
+    justify-content: right;
+  }
+  .responsive-navbar {
+    display: flex;
+    font-size: 1.25rem;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content h4 {
+    font-size: 0.8rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  /* hero */
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero-image {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+  .hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
