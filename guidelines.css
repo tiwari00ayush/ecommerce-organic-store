@@ -1,0 +1,22 @@
+/* guidlines */
+.guidelines {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.guidelines .firstrow {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 2%;
+  gap: 50px;
+  font-size: 1.25rem;
+  font-family: "Merriweather", serif;
+}
+.guidelines .secondrow {
+  background-color: #f8f6f3;
+  text-align: center;
+  padding: 30px 2%;
+}

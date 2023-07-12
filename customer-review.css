@@ -1,0 +1,81 @@
+.customer-reviews {
+  padding: 80px 9%;
+  position: relative;
+  background-color: #fbfaf9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customer-reviews::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(images/background-overlay.png),
+    linear-gradient(to right, #ffffff, #f6f4f1);
+  background-repeat: no-repeat;
+  background-position: right;
+  transform: scaleX(-1);
+  background-size: 400px;
+  opacity: 0.3;
+}
+.customer-reviews h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.customer-reviews .headline-image {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.testinomial {
+  max-width: 1000px;
+  width: 100%;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.slide img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.slide p {
+  max-width: 500px;
+  width: 100%;
+}
+.slide h1 {
+  margin-bottom: 50px;
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination {
+  color: #8bc34a;
+}
+
+@media (max-width: 750px) {
+  .customer-reviews {
+    padding-inline: 2%;
+  }
+  .slide p {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  .slide p {
+    max-width: 200px;
+  }
+}

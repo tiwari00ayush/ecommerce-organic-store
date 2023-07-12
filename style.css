@@ -103,6 +103,7 @@
   width: 100%;
   height: 90vh;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -283,28 +284,7 @@
 
 /* categories section ends here */
 
-/* guidlines */
-.guidelines {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.guidelines .firstrow {
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 2%;
-  gap: 50px;
-  font-size: 1.25rem;
-  font-family: "Merriweather", serif;
-}
-.guidelines .secondrow {
-  background-color: #f8f6f3;
-  text-align: center;
-  padding: 30px 2%;
-}
+/* guidelines ends here */
 @media (max-width: 1200px) {
   .hero-image img {
     width: 400px;
@@ -379,6 +359,11 @@
   /* feature section */
   .features {
     grid-template-columns: repeat(1, 1fr);
+  }
+  /* customer review */
+  .slide p {
+    max-width: 100px;
+    width: 100%;
   }
 }
 
