@@ -226,6 +226,85 @@
 .best-selling-products .products .product .product-image img {
   width: 100%;
 }
+/* best selling ends here */
+
+/* categories section starts here */
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 2%;
+  background-color: #f8f6f3;
+  position: relative;
+}
+.categories .headline-image {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  width: 150px;
+  transform: translate(-50%, -50%);
+}
+.categories .headline-image img {
+  width: 100%;
+}
+.categories .card {
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 40px;
+  padding-bottom: 160px;
+  border-style: none;
+  border-radius: 7px;
+  background-color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 300px;
+}
+.categories #card1 {
+  background-image: url(images/background-overlay-1.jpg);
+}
+.categories #card2 {
+  background-image: url(images/background-overlay-2.jpg);
+}
+.categories #card3 {
+  background-image: url(images/background-overlay-3.jpg);
+}
+.categories .card h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  margin-block: 20px;
+  font-weight: 700;
+}
+.categories .card p {
+  color: #454342;
+  margin-block: 20px;
+}
+
+/* categories section ends here */
+
+/* guidlines */
+.guidelines {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.guidelines .firstrow {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 2%;
+  gap: 50px;
+  font-size: 1.25rem;
+  font-family: "Merriweather", serif;
+}
+.guidelines .secondrow {
+  background-color: #f8f6f3;
+  text-align: center;
+  padding: 30px 2%;
+}
 @media (max-width: 1200px) {
   .hero-image img {
     width: 400px;
@@ -237,6 +316,16 @@
   /* best selling products */
   .best-selling-products {
     padding-inline: 2%;
+  }
+  /* categories section */
+  .categories {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .categories .card {
+    max-width: 100%;
+    padding-bottom: 40px;
+    background-size: 190px;
   }
 }
 
