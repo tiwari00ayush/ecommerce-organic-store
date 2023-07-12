@@ -172,6 +172,60 @@
   padding-block: 10px;
   font-size: 0.8rem;
 }
+/* feature sections ends here */
+
+/*  best selling products section starts here */
+
+.best-selling-products {
+  padding: 70px 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.best-selling-products h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.best-selling-products .headline-image {
+  margin-block: 20px;
+}
+
+.best-selling-products .products {
+  padding-block: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.best-selling-products .products .product {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all ease 0.2s;
+}
+
+.best-selling-products .products .product:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.product .product-text p {
+  font-size: 0.8rem;
+  color: #454342;
+}
+.product .product-text h4 {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.best-selling-products .products .product .product-image img {
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .hero-image img {
     width: 400px;
@@ -180,7 +234,9 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
   }
-  .feature-card {
+  /* best selling products */
+  .best-selling-products {
+    padding-inline: 2%;
   }
 }
 
@@ -208,7 +264,10 @@
     font-size: 1rem;
   }
 
-  /* feature section */
+  /* best selling products */
+  .best-selling-products .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 750px) {
   /* hero */
@@ -231,5 +290,21 @@
   /* feature section */
   .features {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .best-selling-products .products {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .best-selling-products .products .product {
+    max-width: 100%;
+    width: 100%;
+    padding-inline: 2%;
+    margin-block: 20px;
+  }
+  .best-selling-products .products .product:hover {
+    box-shadow: none;
   }
 }
