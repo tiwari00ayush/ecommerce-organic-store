@@ -59,7 +59,20 @@
             ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#"><i class="fa-solid fa-bars menu-btn"></i></a>
+          </li>
+        </ul>
+
+        <ul class="responsive-side-menu">
+          <i class="fa-solid fa-circle-xmark side-menu-cross-btn"></i>
+          <li><a href="everything.html" class="active">Everything</a></li>
+          <li><a href="groceries.html">Groceries</a></li>
+          <li><a href="juice.html">Juice</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <li>
+            <a href="user.html"><i class="fa-solid fa-user"></i></a>
           </li>
         </ul>
       </div>
@@ -92,7 +105,35 @@
     </main>
 
     <!-- hero section ends here -->
+    <!-- side cart -->
+    <div class="side-cart">
+      <div class="heading">
+        <span class="cart-detail">Shopping cart</span>
+        <i class="fa-solid fa-circle-xmark cross-mark"></i>
+      </div>
 
+      <div class="cart-items">
+        <div class="item">
+          <img src="images/product1.jpg" alt="product1" />
+          <div class="item-info">
+            <span class="cart-detail">Assorted Coffee</span>
+            <span class="cart-detail">4 x Rs100</span>
+          </div>
+          <i class="fa-solid fa-circle-xmark cross-mark"></i>
+        </div>
+
+        <div class="item">
+          <img src="images/product1.jpg" alt="product1" />
+          <div class="item-info">
+            <span class="cart-detail">Assorted Coffee</span>
+            <span class="cart-detail">1 x Rs500</span>
+          </div>
+          <i class="fa-solid fa-circle-xmark cross-mark"></i>
+        </div>
+      </div>
+
+      <div class="cart-total"></div>
+    </div>
     <!-- feature sections starts here -->
     <section class="features">
       <div class="feature-card">
@@ -329,9 +370,9 @@
           </div>
         </div>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination nav-btn"></div>
       </div>
     </section>
     <!-- swiper js -->

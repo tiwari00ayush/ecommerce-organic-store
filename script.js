@@ -11,3 +11,14 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const menuBtn = document.querySelector(".menu-btn");
+const sideMenu = document.querySelector(".responsive-side-menu");
+const sideMenuCrossBtn = document.querySelector(".side-menu-cross-btn");
+
+menuBtn.addEventListener("click", () => {
+  sideMenu.classList.add("active");
+});
+sideMenu.addEventListener("click", () => {
+  sideMenu.classList.remove("active");
+});
