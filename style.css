@@ -343,10 +343,12 @@
     text-align: center;
     border-bottom: solid 0.5px black;
   }
-  .responsive-side-menu li:hover {
+  .responsive-side-menu li:hover,
+  .responsive-side-menu li:active {
     background-color: #8bc34a;
   }
-  .responsive-side-menu li:hover a {
+  .responsive-side-menu li:hover a,
+  .responsive-side-menu li:active a {
     color: white;
   }
   .responsive-side-menu li a {
