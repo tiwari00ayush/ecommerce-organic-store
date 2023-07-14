@@ -35,7 +35,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li id="cart">
-            <a href="cart.html" style="color: #8bc34a"
+            <a href="#" style="color: #8bc34a" onclick="openSideCart();"
               >₹00.00
               <i
                 class="fa-solid fa-basket-shopping"
@@ -50,7 +50,11 @@
 
         <ul class="responsive-navbar">
           <li id="cart">
-            <a href="cart.html" style="color: #8bc34a"
+            <a
+              href="#"
+              style="color: #8bc34a"
+              class="cart-btn"
+              onclick="openSideCart();"
               >₹00.00
               <i
                 class="fa-solid fa-basket-shopping"
@@ -109,7 +113,10 @@
     <div class="side-cart">
       <div class="heading">
         <span class="cart-detail">Shopping cart</span>
-        <i class="fa-solid fa-circle-xmark cross-mark"></i>
+        <i
+          class="fa-solid fa-circle-xmark cross-mark"
+          onclick="closeSideCart();"
+        ></i>
       </div>
 
       <div class="cart-items">
@@ -132,7 +139,14 @@
         </div>
       </div>
 
-      <div class="cart-total"></div>
+      <div class="cart-total heading">
+        <span>Subtotal:</span>
+        <span>Rs140.00</span>
+      </div>
+      <div class="cart-btns">
+        <button class="btn">View Cart</button>
+        <button class="btn">Check Out</button>
+      </div>
     </div>
     <!-- feature sections starts here -->
     <section class="features">
